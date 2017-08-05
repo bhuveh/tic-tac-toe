@@ -1,0 +1,186 @@
+body {
+  background-image: url('http://www.publicdomainpictures.net/pictures/110000/velka/chalkboard-or-blackboard.jpg');
+  background-size: cover;
+  
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 95vh;
+  width: 80vw;
+  
+  position: relative;
+  margin: 0 10vw;
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    
+    position: relative;
+    margin: 0;
+  }
+}
+
+.title {
+  height: 15vh;
+  
+  position: relative;  
+  padding-top: 5vh;
+  padding-bottom: 4vh;
+  
+  text-align: center;
+  color: rgba(255,255,255,0.9);
+  font-family: 'Gochi Hand', cursive;
+  font-size: 12vh;  
+}
+
+
+@media (max-width: 785px) {
+  .title {
+    font-size: 68px;
+  }  
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 44px;
+  }  
+}
+
+.reset {
+  height: 3vh;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  text-align: center;
+  color: rgba(255,255,255,0.9);
+  font-family: 'Gochi Hand', cursive;
+  font-size: 20px;
+  border-bottom: solid 2px rgba(0,0,0,0);
+}
+
+.reset:hover {
+  border-bottom: solid 2px white;
+  cursor: pointer;
+}
+
+.players {
+  border: solid 1vh white;
+  
+  height: 50vh;
+  width: 50%;
+  min-width: 300px;
+  
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  
+  -webkit-flex-direction: row; /* Safari */
+  flex-direction: row;
+  
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+  
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content: space-around;
+  
+  -webkit-align-content: space-around; /* Safari */
+  align-content: space-around;
+  
+  -webkit-align-items: center; /* Safari */
+  align-items: center;
+    
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+}
+
+.p-q {
+  height: 25%;
+  width: 35%;
+  min-width: 280px;
+  
+  padding-top: 2%;
+  
+  text-align: center;
+  font-size: 40px;
+  
+  -webkit-order: 1; /* Safari */
+  order: 1;  
+}
+
+.p-a {
+  height: 50%;
+  width: 45%;
+  min-width: 280px;
+  -webkit-order: 2; /* Safari */
+  order: 2; 
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  
+  -webkit-flex-direction: row; /* Safari */
+  flex-direction: row;
+  
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap: wrap;
+  
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content: space-around;
+  
+  -webkit-align-content: space-around; /* Safari */
+  align-content: space-around;
+  
+  -webkit-align-items: center; /* Safari */
+  align-items: center;
+}
+
+.p-b {
+  height: 80%;
+  width: 40%;
+  
+  border: dashed 1vh white;
+  
+  text-align: center;
+  font-size: 18vh;
+}
+
+.p-b:hover{
+  border: solid 1vh white;
+  cursor: pointer;
+}
+
+.game {
+  height: 71vh;
+  width: 71vh;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height:23vh;
+  width: 23vh;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 23vh;
+  color: white;
+  text-align: center;
+}
+.box:hover{
+  cursor: pointer;
+}
+
+.bot {
+  border-bottom: solid 1vh white;
+}
+.right {
+  border-right: solid 1vh white;
+}
