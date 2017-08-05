@@ -55,7 +55,9 @@ body {
   display: inline-block;
   position: relative;
   left: 50%;
-  transform: translate(-50%,-100%);
+  -webkit-transform: translate(-50%,-100%);
+      -ms-transform: translate(-50%,-100%);
+          transform: translate(-50%,-100%);
   text-align: center;
   color: rgba(255,255,255,0.9);
   font-family: 'Gochi Hand', cursive;
@@ -78,25 +80,25 @@ body {
   position: relative;
   top: 35%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  
-  -webkit-flex-direction: row; /* Safari */
-  flex-direction: row;
-  
-  -webkit-flex-wrap: wrap; /* Safari */
-  flex-wrap: wrap;
-  
-  -webkit-justify-content: space-around; /* Safari */
-  justify-content: space-around;
-  
-  -webkit-align-content: space-around; /* Safari */
-  align-content: space-around;
-  
-  -webkit-align-items: center; /* Safari */
-  align-items: center;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%); /* Safari */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Safari */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; /* Safari */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; /* Safari */
+  -ms-flex-pack: distribute;
+      justify-content: space-around; /* Safari */
+  -ms-flex-line-pack: distribute;
+      align-content: space-around; /* Safari */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
     
   font-family: 'Gochi Hand', cursive;
   color: white;
@@ -110,35 +112,35 @@ body {
   padding-top: 2%;
   
   text-align: center;
-  font-size: 40px;
-  
-  -webkit-order: 1; /* Safari */
-  order: 1;  
+  font-size: 40px; /* Safari */
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;  
 }
 
 .p-a {
   height: 50%;
   width: 45%;
-  min-width: 280px;
-  -webkit-order: 2; /* Safari */
-  order: 2; 
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  
-  -webkit-flex-direction: row; /* Safari */
-  flex-direction: row;
-  
-  -webkit-flex-wrap: wrap; /* Safari */
-  flex-wrap: wrap;
-  
-  -webkit-justify-content: space-around; /* Safari */
-  justify-content: space-around;
-  
-  -webkit-align-content: space-around; /* Safari */
-  align-content: space-around;
-  
-  -webkit-align-items: center; /* Safari */
-  align-items: center;
+  min-width: 280px; /* Safari */
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; /* Safari */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Safari */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; /* Safari */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; /* Safari */
+  -ms-flex-pack: distribute;
+      justify-content: space-around; /* Safari */
+  -ms-flex-line-pack: distribute;
+      align-content: space-around; /* Safari */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .p-b {
@@ -161,9 +163,14 @@ body {
   width: 71vh;
   position: relative;
   left: 50%;
-  transform: translate(-50%,0%);
+  -webkit-transform: translate(-50%,0%);
+      -ms-transform: translate(-50%,0%);
+          transform: translate(-50%,0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .box {
